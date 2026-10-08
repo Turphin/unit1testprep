@@ -38,6 +38,10 @@ public class MovieTheater {
     public MovieTheater() {
         // TODO: Initialize all four instance variables.
         // You can default it to a movie that is playing at Majestic Bay right now.
+        movieTitle = ;
+        numTickets = ;
+        ticketPrice = ;
+        goodMovie = ;
     }
 
 
@@ -49,6 +53,10 @@ public class MovieTheater {
                         double price, boolean good) {
         // TODO: Initialize all four instance variables
         // using the parameters.
+        movieTitle = title;
+        numTickets = tickets;
+        ticketPrice = price;
+        goodMovie = good;
     }
 
 
@@ -65,7 +73,7 @@ public class MovieTheater {
      */
     public int getMovieTitleLength() {
         // TODO
-        return 0;
+        return movieTitle.length();
     }
 
 
@@ -83,7 +91,7 @@ public class MovieTheater {
      */
     public String getMovieSubstring(int start, int end) {
         // TODO
-        return "";
+        return movieTitle.getMovieSubstring(start,end);
     }
 
 
@@ -100,7 +108,7 @@ public class MovieTheater {
      */
     public int findOf() {
         // TODO
-        return 0;
+        return movieTitle.indexOf("of");
     }
 
 
