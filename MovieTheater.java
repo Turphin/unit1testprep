@@ -261,7 +261,12 @@ public class MovieTheater {
      */
     public int popcornLottery(int minKernels, int maxKernels) {
         // TODO
-        return 0;
+        int result;
+        if (minKernels < 50) {
+            minKernels = 50;
+        }
+        result = (int)Math.random()*(maxKernels - minKernels + 1) + minKernels
+        return result;
     }
 
 
