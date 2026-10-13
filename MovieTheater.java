@@ -123,7 +123,7 @@ public class MovieTheater {
      */
     public int compareMovieTitles(String otherTitle) {
         // TODO
-        return 0;
+        return movieTitle.compareTo(otherTitle);
     }
 
 
@@ -138,7 +138,7 @@ public class MovieTheater {
      */
     public boolean isSameMovie(String otherTitle) {
         // TODO
-        return false;
+        return movieTitle.equals(otherTitle);
     }
 
 
@@ -165,7 +165,7 @@ public class MovieTheater {
      */
     public int randomTicketPrice(int minPrice, int maxPrice) {
         // TODO
-        return 0;
+        return (int)Math.random()*(maxPrice - minPrice + 1) + minPrice;
     }
 
 
@@ -185,7 +185,7 @@ public class MovieTheater {
      */
     public double ticketPricePower(double power) {
         // TODO
-        return 0.0;
+        return Math.pow(ticketPrice, power);
     }
 
 
@@ -204,7 +204,7 @@ public class MovieTheater {
      */
     public double ticketPriceRipoff(double fairPrice) {
         // TODO
-        return 0.0;
+        return Math.abs(ticketPrice-fairPrice);
     }
 
 
@@ -217,7 +217,7 @@ public class MovieTheater {
      */
     public boolean isWorthWatching() {
         // TODO
-        return false;
+        return goodMovie;
     }
 
 
